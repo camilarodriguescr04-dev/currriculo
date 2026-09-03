@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Currículo - Camila R.</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600&display=swap"
+    rel="stylesheet"
+  >
+
+  <style>
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #f3f3f0;
+      color: #202522;
+      font-family: 'Inter', Arial, sans-serif;
+    }
+
+    .cv {
+      max-width: 1050px;
+      margin: 45px auto;
+      background: #ffffff;
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+    }
+
+    .serif {
+      font-family: 'Playfair Display', Georgia, serif;
+    }
+
+    .green {
+      color: #234d3a;
+    }
+
+    .line {
+      width: 100%;
+      height: 1px;
+      background: #d8ddd9;
+    }
+
+    .section-title {
+      color: #234d3a;
+      font-size: 12px;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+
+    .small-label {
+      color: #718078;
+      font-size: 10px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+    }
+
+    /* FOTO */
+
+    .photo {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 1px solid #d9ddd9;
+      background: #eeeeeb;
+    }
+
+    .photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+    }
+
+    /* EXPERIÊNCIA */
+
+    .experience {
+      position: relative;
+      padding-left: 25px;
+      border-left: 1px solid #cbd4ce;
+    }
+
+    .experience::before {
+      content: '';
+      position: absolute;
+      left: -4px;
+      top: 5px;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #234d3a;
+    }
+
+    /* HABILIDADES */
+
+    .skill {
+      border-bottom: 1px solid #e1e5e2;
+      padding: 10px 0;
+      font-size: 13px;
+      color: #3f4843;
+    }
+
+    /* CONTATO */
+
+    .contact-item {
+      padding: 9px 0;
+      border-bottom: 1px solid #e5e8e6;
+    }
+
+    @media print {
+
+      body {
+        background: white;
+      }
+
+      .cv {
+        margin: 0;
+        max-width: none;
+        box-shadow: none;
+      }
+
+    }
+
+    @media (max-width: 768px) {
+
+      .cv {
+        margin: 15px;
+      }
+
+      .header {
+        text-align: center;
+      }
+
+      .photo {
+        margin: 0 auto 25px;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+  <main class="cv">
+
+
+    <!-- ================= CABEÇALHO ================= -->
+
+    <header class="px-8 md:px-14 pt-12 pb-10">
+
+      <div class="header flex flex-col md:flex-row items-center md:items-start gap-8">
+
+
+        <!-- FOTO -->
+
+        <div class="flex-shrink-0">
+
+          <div class="photo">
+
+            <img
+              src="./camilar.jpg"
+              alt="Foto de perfil de Camila R."
+            >
+
+          </div>
+
+        </div>
+
+
+        <!-- INFORMAÇÕES -->
+
+        <div class="flex-1 pt-2">
+
+          <p class="small-label mb-3">
+            Currículo profissional
+          </p>
+
+          <h1 class="serif text-5xl md:text-6xl font-medium text-gray-900 leading-tight">
+            Camila R.
+          </h1>
+
+          <p class="green text-sm tracking-widest uppercase mt-4 italic">
+            Estudante de Desenvolvimento de Sistemas
+          </p>
+
+          <div class="line my-6"></div>
+
+          <div class="flex flex-col md:flex-row md:flex-wrap gap-x-8 gap-y-2 text-xs text-gray-600">
+
+            <span>
+              camilarodriguescr04@gmail.com
+            </span>
+
+            <span>
+              (21) 99499-8787
+            </span>
+
+            <span>
+              github.com/camilarodriguescr04-dev
+            </span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </header>
+
+
+    <div class="line mx-8 md:mx-14"></div>
+
+
+    <!-- ================= CONTEÚDO ================= -->
+
+    <div class="px-8 md:px-14 py-10">
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+
+
+        <!-- ================= COLUNA PRINCIPAL ================= -->
+
+        <section class="md:col-span-2">
+
+
+          <!-- PERFIL -->
+
+          <div class="mb-12">
+
+            <h2 class="section-title">
+              Perfil
+            </h2>
+
+            <p class="text-sm leading-7 text-gray-600">
+
+              Sou estudante de Desenvolvimento de Sistemas, com Ensino Médio
+              Completo e atualmente cursando formação técnica em
+              Desenvolvimento de Sistemas no SENAI. Tenho interesse em
+              desenvolvimento web, programação, banco de dados e inteligência
+              artificial.
+
+              <br><br>
+
+              Estou constantemente desenvolvendo meus conhecimentos em HTML,
+              CSS, JavaScript, banco de dados e GitHub. Sou uma pessoa
+              dedicada, organizada, proativa e com facilidade para aprender
+              novas tecnologias. Busco oportunidades para desenvolver minhas
+              habilidades, adquirir experiência profissional e contribuir em
+              projetos reais na área de tecnologia.
+
+            </p>
+
+          </div>
+
+
+          <!-- EXPERIÊNCIA -->
+
+          <div class="mb-12">
+
+            <h2 class="section-title">
+              Experiência & Projetos
+            </h2>
+
+
+            <!-- PRODUCTIVE PLAYHOUSE -->
+
+            <article class="experience mb-9">
+
+              <div class="flex flex-col md:flex-row md:justify-between gap-1 mb-2">
+
+                <div>
+
+                  <h3 class="font-semibold text-gray-800 text-base">
+                    Projeto de Transcrição e Treinamento de IA
+                  </h3>
+
+                  <p class="text-xs green mt-1">
+                    Productive Playhouse
+                  </p>
+
+                </div>
+
+                <span class="small-label">
+                  Em andamento
+                </span>
+
+              </div>
+
+
+              <p class="text-sm leading-6 text-gray-600">
+
+                Participação em projeto de transcrição e treinamento de
+                inteligência artificial voltado para o português brasileiro.
+                Atuação na produção e revisão de dados linguísticos,
+                contribuindo para o treinamento e aprimoramento de sistemas
+                de inteligência artificial capazes de compreender e processar
+                a língua portuguesa brasileira.
+
+              </p>
+
+            </article>
+
+
+            <!-- LOJAS AMERICANAS -->
+
+            <article class="experience mb-9">
+
+              <div class="flex flex-col md:flex-row md:justify-between gap-1 mb-2">
+
+                <div>
+
+                  <!-- CARGO -->
+
+                  <h3 class="font-semibold text-gray-800 text-base">
+                    Atendimento ao Cliente
+                  </h3>
+
+                  <!-- EMPRESA -->
+
+                  <p class="text-xs green mt-1">
+                    Lojas Americanas
+                  </p>
+
+                </div>
+
+
+                <!-- PERÍODO -->
+
+                <span class="small-label">
+                  Fev. 2026 — Abr. 2026
+                </span>
+
+              </div>
+
+
+              <p class="text-sm leading-6 text-gray-600">
+
+                Atuação no atendimento ao cliente, oferecendo suporte e
+                orientação aos consumidores no salão da loja. Responsável
+                também pela organização de produtos e displays, reposição de
+                mercadorias, organização de estoque e auxílio nas operações
+                de caixa e pagamentos.
+
+              </p>
+
+            </article>
+
+
+            <!-- FORMAÇÕES / CURSOS -->
+
+            <article class="mb-6">
+
+              <h3 class="font-semibold text-gray-800 text-sm">
+                Assistente Administrativo — SENAI
+              </h3>
+
+            </article>
+
+
+            <article class="mb-6">
+
+              <h3 class="font-semibold text-gray-800 text-sm">
+                Técnico em Desenvolvimento de Sistemas — SENAI
+              </h3>
+
+              <p class="text-xs text-gray-500 mt-1">
+                Em andamento
+              </p>
+
+            </article>
+
+
+            <article>
+
+              <h3 class="font-semibold text-gray-800 text-sm">
+                Curso de CSS — Responsive Design
+              </h3>
+
+            </article>
+
+          </div>
+
+
+          <!-- ATUALMENTE ESTUDANDO -->
+
+          <div>
+
+            <h2 class="section-title">
+              Atualmente estudando
+            </h2>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-x-8 gap-y-4">
+
+              <div class="text-sm text-gray-600">
+                HTML
+              </div>
+
+              <div class="text-sm text-gray-600">
+                CSS
+              </div>
+
+              <div class="text-sm text-gray-600">
+                JavaScript
+              </div>
+
+              <div class="text-sm text-gray-600">
+                Banco de Dados
+              </div>
+
+              <div class="text-sm text-gray-600">
+                GitHub
+              </div>
+
+              <div class="text-sm text-gray-600">
+                Inteligência Artificial
+              </div>
+
+            </div>
+
+          </div>
+
+
+        </section>
+
+
+        <!-- ================= COLUNA LATERAL ================= -->
+
+        <aside>
+
+
+          <!-- HABILIDADES -->
+
+          <div class="mb-10">
+
+            <h2 class="section-title">
+              Habilidades
+            </h2>
+
+            <div>
+
+              <div class="skill">
+                Organização
+              </div>
+
+              <div class="skill">
+                Facilidade para aprender
+              </div>
+
+              <div class="skill">
+                Trabalho em equipe
+              </div>
+
+              <div class="skill">
+                Proatividade
+              </div>
+
+              <div class="skill">
+                Comunicação
+              </div>
+
+              <div class="skill">
+                Atendimento ao cliente
+              </div>
+
+              <div class="skill">
+                Pensamento analítico
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- FERRAMENTAS -->
+
+          <div class="mb-10">
+
+            <h2 class="section-title">
+              Ferramentas
+            </h2>
+
+            <div>
+
+              <div class="skill">
+                Visual Studio Code
+              </div>
+
+              <div class="skill">
+                GitHub
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- FORMAÇÃO -->
+
+          <div class="mb-10">
+
+            <h2 class="section-title">
+              Formação acadêmica
+            </h2>
+
+
+            <div class="mb-6">
+
+              <p class="small-label mb-1">
+                Concluído
+              </p>
+
+              <h3 class="text-sm font-semibold text-gray-800">
+                Ensino Médio Completo
+              </h3>
+
+            </div>
+
+
+            <div>
+
+              <p class="small-label mb-1">
+                Em andamento
+              </p>
+
+              <h3 class="text-sm font-semibold text-gray-800">
+                Técnico em Desenvolvimento de Sistemas
+              </h3>
+
+              <p class="text-xs text-gray-500 mt-1">
+                SENAI
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <!-- CONTATO -->
+
+          <div>
+
+            <h2 class="section-title">
+              Contato
+            </h2>
+
+
+            <div class="contact-item">
+
+              <p class="small-label">
+                E-mail
+              </p>
+
+              <p class="text-xs text-gray-600 break-all mt-1">
+                camilarodriguescr04@gmail.com
+              </p>
+
+            </div>
+
+
+            <div class="contact-item">
+
+              <p class="small-label">
+                WhatsApp
+              </p>
+
+              <p class="text-xs text-gray-600 mt-1">
+                (21) 99499-8787
+              </p>
+
+            </div>
+
+
+            <div class="contact-item">
+
+              <p class="small-label">
+                GitHub
+              </p>
+
+              <p class="text-xs text-gray-600 break-all mt-1">
+                github.com/camilarodriguescr04-dev
+              </p>
+
+            </div>
+
+          </div>
+
+
+        </aside>
+
+      </div>
+
+    </div>
+
+
+    <!-- ================= RODAPÉ ================= -->
+
+    <footer class="px-8 md:px-14 py-6 border-t border-gray-200">
+
+      <div class="flex flex-col md:flex-row justify-between gap-2">
+
+        <span class="small-label">
+          Camila R.
+        </span>
+
+        <span class="text-xs text-gray-400 italic">
+          Desenvolvimento de Sistemas
+        </span>
+
+      </div>
+
+    </footer>
+
+
+  </main>
+
+</body>
+
+</html>
